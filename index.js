@@ -1,5 +1,5 @@
 //index ========================================================
-
+let lengthOfSlide;
 const bars = document.getElementById("nav-action");
 const nav = document.getElementById("nav");
 
@@ -19,7 +19,7 @@ let arrayOfSlides = Array.prototype.slice.call(slides);
 let carouselDisplaying;
 let screenSize;
 setScreenSize();
-let lengthOfSlide;
+
 
 function addClone() {
    let lastSlide = carouselContent.lastElementChild.cloneNode(true);
@@ -62,9 +62,9 @@ window.addEventListener('resize', setScreenSize);
 
 function setScreenSize() {
   if ( window.innerWidth >= 500 ) {
-    carouselDisplaying = 3;
+    carouselDisplaying = 1;
   } else if ( window.innerWidth >= 300 ) {
-    carouselDisplaying = 2;
+    carouselDisplaying = 1;
   } else {
     carouselDisplaying = 1;
   }
