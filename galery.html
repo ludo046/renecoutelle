@@ -7,6 +7,7 @@
     <link href="./styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>René Coutelle</title>
 </head>
@@ -19,24 +20,49 @@
         <nav id="nav">
             <ul>
                 <li class="shape-circle circle-one"><a href="#">artist</a></li>
-                <li class="shape-circle circle-two"><a href="#">history</a></li>
+                <li class="shape-circle circle-two"><a href="./history.html">history</a></li>
                 <li class="shape-circle circle-three"><a href="./galery.html">gallery</a></li>
                 <li class="shape-circle circle-five"><a href="./index.html">home</a></li>
             </ul>
         </nav>
     </div>
-    <div id="carousel">
-        <figure id="spinner">
-            <img src="./images/6bf9cd02-fc38-473a-baad-c05a83f335ba.jpeg" alt="">
-            <img src="./images/DSC0270site.jpeg" alt="">
-            <img src="./images/DSC1706site.jpeg" alt="">
-            <img src="./images/e23d86c3-9e51-4cde-bc45-8e58be585993.png" alt="">
-            <img src="./images//DSC1724site.jpeg" alt="">
-            <img src="./images/site.jpeg" alt="">
-        </figure>
-    </div>
-    <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-    <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+
+    <div class="container-gallery">
+
+        <div class="carousel">
+              <div class="nav nav-left">
+                <div class="ion-chevron-left carousel-arrow-icon-left"><i class="fas fa-chevron-left"></i></div>
+              </div>
+        
+                <div class="carousel-content">
+                  
+                  <div class="slide slide-1">
+                    <img src="./images/6bf9cd02-fc38-473a-baad-c05a83f335ba.jpeg" alt="">
+                  </div>
+                  <div class="slide slide-2">
+                    <img src="./images/DSC0270site.jpeg" alt="">>
+                  </div>
+                  <div class="slide slide-3">
+                    <img src="./images/DSC1706site.jpeg" alt="">
+                  </div>
+                  <div class="slide slide-4">
+                    <img src="./images/DSC1724site.jpeg" alt="">
+                  </div>
+                  <div class="slide slide-5">
+                    <img src="./images/e23d86c3-9e51-4cde-bc45-8e58be585993.png" alt="">
+                  </div>
+                  <div class="slide slide-6">
+                    <img src="./images/site.jpeg" alt="">
+                  </div>
+                
+                </div>
+        
+              <div class="nav nav-right">
+                <div class="ion-chevron-right carousel-arrow-icon-right"><i class="fas fa-chevron-right"></i></div>
+              </div>
+            </div>
+            
+        </div>
     <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+@keyframes move-rigth {
+    from{
+        left: -1000px;
+        transform: rotate(0);
+    }
+    to{
+        left: -300px;
+        transform: rotate(360deg);
+    }
+}
+@keyframes grow {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
+}
